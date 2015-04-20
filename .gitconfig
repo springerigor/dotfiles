@@ -5,12 +5,11 @@
   delete-merged-branches = "!git checkout master && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 
 [user]
-	name = Igor Springer
-	email = springerigor@gmail.com
+  name = Igor Springer
+  email = springerigor@gmail.com
 
 [core]
-	editor = nano
-	ignorecase = true
+  ignorecase = true
 
 [branch]
   # set up git pull to do a rebase instead of merge
