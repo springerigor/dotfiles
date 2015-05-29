@@ -9,6 +9,7 @@
   email = springerigor@gmail.com
 
 [core]
+  editor = nano
   ignorecase = true
 
 [branch]
