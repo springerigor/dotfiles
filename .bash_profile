@@ -29,7 +29,7 @@ alias gdel='git branch -d'
 alias dbm='rake db:migrate'
 alias dbs='rake db:setup'
 alias bi='bundle install'
-alias up='git checkout master && git pull && rake db:migrate && bundle install'
+alias up='git checkout master && git pull && bundle install && rake db:migrate'
 
 # Bash aliases
 alias showruby='lsof -wni tcp:3000'
