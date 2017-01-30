@@ -24,7 +24,12 @@ alias gdc='git diff --cached'
 alias gb='git branch'
 alias gcb='git checkout -b'
 alias gdel='git branch -d'
-alias gu='git checkout master && git pull && bundle'
+
+# Ruby & Rails aliases
+alias dbm='rake db:migrate'
+alias dbs='rake db:setup'
+alias bi='bundle install'
+alias up='git checkout master && git pull && rake db:migrate && bundle install'
 
 # Bash aliases
 alias showruby='lsof -wni tcp:3000'
@@ -36,4 +41,3 @@ alias ...='cd ../..'
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
-
