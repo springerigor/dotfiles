@@ -5,15 +5,18 @@
   delete-merged-branches = "!git checkout master && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 
 [user]
+  # Git user details
   name = Igor Springer
   email = springerigor@gmail.com
 
 [core]
-  editor = nano
+  # Create commit message in Atom editor
+  # -w` flag force Git to wait for the commit message
+  editor = code --wait
   ignorecase = true
 
 [branch]
-  # set up git pull to do a rebase instead of merge
+  # Set up git pull to do a rebase instead of merge
   autosetuprebase = always
 
 [color]
@@ -28,4 +31,16 @@
 
 [push]
   # Push current branch even if you've never pushed it before
-  default = current
+	default = current
+
+[gpg]
+	program = gpg
+
+[commit]
+  # Do not sign commits with GPG
+	gpgsign = false
+  # Display diff when creating commit message
+  verbose = true
+
+[init]
+	templateDir = /Users/igor/.git/hooks
